@@ -5,7 +5,7 @@ Author:     AF themes
 Author URI: https://afthemes.com/
 Description: CorpNews is a professional, enterprise-level WordPress child theme built on MoreNews for online newspapers and high-traffic editorial platforms. It features a suite of pre-built starter templates with one-click import, a flexible header and footer builder, and advanced template kits. The theme allows for the deployment of complex category hubs and custom layouts via the Block Editor and major page builders without manual coding. Optimized for ranking and speed through Core Web Vitals and SEO standards, it supports WooCommerce and AMP. The theme is multilingual and RTL-ready, offering demos in English, Spanish, French, Japanese, and Arabic. https://afthemes.com/products/corpnews/
 Template: morenews
-Version: 1.0.20
+Version: 1.0.21
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 6.9
@@ -225,6 +225,19 @@ body.aft-dark-mode .widget ul ul li,
 body.aft-dark-mode .widget ul.menu>li, 
 body.aft-dark-mode .widget>ul>li {
     border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+body.aft-dark-mode .archive-layout-list .no-post-image .read-bg-img,
+body.aft-dark-mode .archive-layout-grid .no-post-image .read-bg-img,
+body.aft-dark-mode .featured-posts.reviewnews-customizer .no-post-image .read-bg-img,
+body.aft-dark-mode .grid-layout.reviewnews-customizer .no-post-image .read-bg-img,
+body.aft-dark-mode .latest-posts-grid .no-post-image .read-bg-img {
+    height: unset !important;
+    background: transparent;
+    padding-top: 0;
+    display: flex;
+    aspect-ratio: unset !important;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 993px) {
